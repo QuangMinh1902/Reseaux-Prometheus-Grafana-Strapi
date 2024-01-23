@@ -1,7 +1,7 @@
 version: "3"
 services:
   strapi:
-    image: strapi/strapi
+    image: strapi/strapi:latest
     environment:
       DATABASE_CLIENT: postgres
       DATABASE_NAME: strapi
@@ -67,7 +67,8 @@ services:
     container_name: node_exporter
     command:
       - "--path.rootfs=/host"
-    pid: hosthttps://github.com/strapi/foodadvisor
+    pid: host
+    network_mode: host
     restart: unless-stopped
     volumes:
       - "/:/host:ro,rslave"

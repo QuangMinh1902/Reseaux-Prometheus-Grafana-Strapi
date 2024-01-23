@@ -17,6 +17,6 @@ scrape_configs:
       - targets: ["localhost:9090"]
 
     # Example job for node_exporter
-  - job_name: "node_exporter"
+  - job_name: "node"
     static_configs:
       - targets: ["node_exporter:9100"]
