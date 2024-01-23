@@ -38,5 +38,7 @@ export default {
 </script>
 
 <style scoped>
-/* Vos styles CSS spécifiques au composant, si nécessaire */
+ul {
+  list-style: none;
+}
 </style>
